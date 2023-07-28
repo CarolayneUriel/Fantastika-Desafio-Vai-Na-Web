@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #252525;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 12vw;
+}
+
+header section img{
+    width: 80px;
+}
+
+section h2{
+    font-family: Roboto Serif;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.primeira-section-main{
+    background-image: url(./assets/cachorro-rosa-w.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+  
+}
+
+.primeira-section-main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.primeira-section-main img{
+    width: 7vw;
+}
+
+.primeira-section-main h1{
+    color: #F4F2F3;
+    font-size: 50px;
+    margin-bottom: 50px;
+    width: 400px;
+}
+
+.segunda-section-main{
+    background-image: url(./assets/cachorro-fantasia-w.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+}
+
+.segunda-section-main div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 230px;
+    margin-left: 160px;
+}
+
+.segunda-section-main h2{
+    color: #3A342F;
+    font-size: 50px;
+    flex-direction: column;
+    width: 450px;
+    font-weight: 700;   
+}
+
+.segunda-section-main p{
+    width: 342px;
+    color: #3A342F;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.segunda-section-main button{
+    width: 250px;
+    background-color: #3A342F;
+    color: #F4F2F3;
+    height: 80px;
+    border-radius: 45px;
+    margin-top: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+
+.terceira-section-main{
+    background-image: url(./assets/cachorro-preto-w.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+}
+
+.terceira-section-main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 200px;
+    margin-right: 450px;
+    
+}
+
+.terceira-section-main h2{
+    color: #F4F2F3;
+    font-size: 50px;
+    width: 450px;
+    font-family: Roboto Serif, sans-serif;
+    font-weight: 700; 
+}
+
+.terceira-section-main p{
+    width: 342px;
+    color: #F4F2F3;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.terceira-section-main button{
+    width: 250px;
+    background-color: #F4F2F3;
+    color: #252525;
+    height: 80px;
+    border-radius: 45px;
+    margin-top: 48px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 200px;
+    border: none;
+}
+
+.quarta-section-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+    width: 100vw;
+    background-color: #FFFFFF;
+
+}
+
+.quarta-section-main div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw; 
+}
+
+.quarta-section-main img{
+    width: 210px;
+    
+}
+
+.quarta-section-main h2{
+    color: #FD6A9A;
+    font-family: Roboto Serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+footer{
+    background-color: #EB4A7B;
+    height: 40vh;
+    width: 100vw;
+}
+
+.footer-logo, .footer-nav{
+    display: none;
+}
+
+.footer-listas{
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+}
+
+.footer-listas div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20vw;
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.footer-listas h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.footer-listas ul{
+    color: #F4F2F3;
+    list-style: none;
+    line-height: 35px;
+    font-family: Roboto, Regular;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 800px) {
+    
+    header section{
+        width: 60vw;
+        justify-content: space-evenly;
+    }
+
+    .icone-header{
+        display: none;
+    }
+
+    .primeira-section-main{
+        background-image: url(./assets/cachorro-rosa-m.png);
+        height: 100vh;
+    }
+
+    .primeira-section-main h1{
+        margin-top: -150px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .primeira-section-main img{
+        width: 80px;
+        margin-top: 80px;
+    }
+
+    .segunda-section-main{
+        background-image: url(./assets/cachorro-fantasia-m.png);
+        height: 100vh;
+    }
+
+    .segunda-section-main h2{
+        margin: -210px 0px 0px -120px;
+        font-size: 25px;
+    }
+
+    .segunda-section-main p{
+        margin-left: -120px;
+        margin-top: 20px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .segunda-section-main button{
+        margin-left: -130px;
+        width: 130px;
+        font-size: 15px;
+        height: 50px;
+        margin-top: 40px;
+    }
+
+    .terceira-section-main{
+        background-image: url(./assets/cachorro-preto-m.png);
+        height: 100vh;
+    }
+
+    .terceira-section-main div{
+       justify-content: flex-start;
+       align-items: flex-start;
+       margin-top: 50px;
+       margin-left: 70px;
+    }
+
+    .terceira-section-main h2{
+        font-size: 25px;
+       
+    }
+
+    .terceira-section-main p{
+        font-size: 18px;
+        width: 200px;
+    }
+
+    .terceira-section-main button{
+        width: 120px;
+        font-size: 15px;
+        height: 50px;
+        margin-top: 30px;
+    }   
+
+    .quarta-section-main{
+        flex-direction: column;
+    }
+
+    .quarta-section-main h2{
+        font-size: 18px;
+    }
+
+    .quarta-section-main div{
+        width: 80vw;
+    }
+
+    .quarta-section-main img{
+        width: 100px;
+
+    }
+
+    footer{
+        height: 120vh;
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60vw;
+        margin-left: 70px;
+        height: 15vh;
+    }
+
+    .footer-logo figure img{
+        width: 75px;
+    }
+
+    .footer-nav{
+        display: flex;
+        height: 12vh;
+        margin-bottom: 60px;
+        
+    }
+
+    .footer-nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 85px;
+        width: 50vw;
+        list-style: none;
+        
+    }
+
+    .footer-nav li img{
+        width: 40px;
+    }
+
+    .footer-listas{
+        margin-top: -100px;
+        flex-direction: column;
+    }
+
+    .footer-listas div{
+        width: 33vw;
+        height: 20vh;
+    }
+
+    .footer-listas h2{
+        font-size: 20px;
+
+    }
+
+    .footer-listas ul{
+        font-size: 14px;
+    }
+
+   
+}
+
+
